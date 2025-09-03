@@ -1,0 +1,47 @@
+{% extends 'main/base.html' %}
+
+{% block title %}About - Django Project{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title">About This Project</h1>
+                <p class="lead">
+                    This is a Django web application created to help you get started with web development.
+                </p>
+                
+                <h3>What is Django?</h3>
+                <p>
+                    Django is a high-level Python web framework that encourages rapid development and clean, 
+                    pragmatic design. Built by experienced developers, it takes care of much of the hassle of 
+                    web development, so you can focus on writing your app without needing to reinvent the wheel.
+                </p>
+                
+                <h3>Features</h3>
+                <ul>
+                    <li><strong>Fast:</strong> Django was designed to help developers take applications from concept to completion as quickly as possible.</li>
+                    <li><strong>Secure:</strong> Django takes security seriously and helps developers avoid many common security mistakes.</li>
+                    <li><strong>Scalable:</strong> Some of the busiest sites on the web leverage Django's ability to quickly and flexibly scale.</li>
+                </ul>
+                
+                <h3>Getting Started</h3>
+                <p>
+                    To start developing with this project:
+                </p>
+                <ol>
+                    <li>Activate your virtual environment: <code>source django_env/bin/activate</code></li>
+                    <li>Run migrations: <code>python manage.py migrate</code></li>
+                    <li>Start the development server: <code>python manage.py runserver</code></li>
+                    <li>Open your browser and go to <code>http://127.0.0.1:8000/</code></li>
+                </ol>
+                
+                <div class="mt-4">
+                    <a href="{% url 'main:home' %}" class="btn btn-primary">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

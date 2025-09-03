@@ -1,0 +1,49 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Home - Django Project{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-body text-center">
+                <h1 class="card-title display-4">Welcome to Django!</h1>
+                <p class="card-text lead">
+                    This is your new Django project. You can start building your web application from here.
+                </p>
+                <div class="mt-4">
+                    <a href="{% url 'main:about' %}" class="btn btn-primary btn-lg">Learn More</a>
+                    <a href="https://docs.djangoproject.com/" class="btn btn-outline-secondary btn-lg ms-2" target="_blank">Django Docs</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">🚀 Fast Development</h5>
+                        <p class="card-text">Django's rapid development framework helps you build applications quickly.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">🔒 Secure</h5>
+                        <p class="card-text">Built-in security features protect against common web vulnerabilities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">📱 Scalable</h5>
+                        <p class="card-text">Django scales from small applications to high-traffic websites.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
